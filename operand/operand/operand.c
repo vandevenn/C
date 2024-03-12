@@ -27,19 +27,50 @@
 //	return 0;
 //}
 
+//int main(void)
+//{
+//	int a, b, tot;
+//	double avg;
+//
+//	printf("두 과목의 점수 :");
+//	scanf("%d %d", &a, &b);
+//	tot = a + b;
+//	avg = tot / 2.0;
+//
+//	printf("평균 : %.1lf\n", avg);
+//
+//	return 0;
+//}
+
 int main(void)
 {
-	int a, b, tot;
-	double avg;
+	int kor = 3;
+	int eng = 5;
+	int mat = 4;
 
-	printf("두 과목의 점수 :");
-	scanf("%d %d", &a, &b);
-	tot = a + b;
-	avg = tot / 2.0;
+	int credits;
+	int res;
 
-	printf("평균 : %.1lf\n", avg);
+	double kscore = 3.8;
+	double escore = 4.4;
+	double mscore = 3.9;
+
+	double grade;
+	
+	credits = kor + eng + mat;
+	grade = (kscore + escore + mscore) / 3;
+
+	res = ((credits >= 10) && (grade > 4.0));
+	printf("변수값 대입 방식 : %d\n", res);
+
+	if ((credits >= 10) && (grade > 4.0))
+		{
+			printf("조건문 방식 : 1");
+		}
+	else
+		{
+			printf("조건문 방식 : 0");
+		}
 
 	return 0;
 }
-
-
