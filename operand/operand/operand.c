@@ -42,35 +42,84 @@
 //	return 0;
 //}
 
-int main(void)
+//int main(void)
+//{
+//	int kor = 3;
+//	int eng = 5;
+//	int mat = 4;
+//
+//	int credits;
+//	int res;
+//
+//	double kscore = 3.8;
+//	double escore = 4.4;
+//	double mscore = 3.9;
+//
+//	double grade;
+//	
+//	credits = kor + eng + mat;
+//	grade = (kscore + escore + mscore) / 3;
+//
+//	res = ((credits >= 10) && (grade > 4.0));
+//	printf("변수값 대입 방식 : %d\n", res);
+//
+//	if ((credits >= 10) && (grade > 4.0))
+//		{
+//			printf("조건문 방식 : 1");
+//		}
+//	else
+//		{
+//			printf("조건문 방식 : 0");
+//		}
+//
+//	return 0;
+//}
+
+//int main()
+//{
+//	int res;
+//	
+//	res = (sizeof(short) > sizeof(long));
+//
+//	if (res)
+//	{
+//		printf("short");
+//	}
+//	else
+//	{
+//		printf("long");
+//	}
+//	
+//	return 0;
+//}
+
+void audience() //입장률 계산 함수
 {
-	int kor = 3;
-	int eng = 5;
-	int mat = 4;
+	int seat = 70;
+	int audience = 65;
+	double rate;
 
-	int credits;
-	int res;
+	rate = (double)audience / (double)seat * 100;
 
-	double kscore = 3.8;
-	double escore = 4.4;
-	double mscore = 3.9;
+	printf("입장률 : %.1lf%%", rate); //
+}
 
-	double grade;
+void trans()
+{
+	int hour, min, sec;
+	double time = 3.76;
+
+	hour = (int)time;
+	min = (time - hour) * 60;
+	sec = (min - (double)min);
+
+	printf("%0.2lf")
+}
+
+int main()
+{
+	//audience();
 	
-	credits = kor + eng + mat;
-	grade = (kscore + escore + mscore) / 3;
-
-	res = ((credits >= 10) && (grade > 4.0));
-	printf("변수값 대입 방식 : %d\n", res);
-
-	if ((credits >= 10) && (grade > 4.0))
-		{
-			printf("조건문 방식 : 1");
-		}
-	else
-		{
-			printf("조건문 방식 : 0");
-		}
-
 	return 0;
 }
+
