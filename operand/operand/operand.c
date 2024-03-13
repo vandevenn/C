@@ -109,16 +109,18 @@ void trans()
 	int hour, min, sec;
 	double time = 3.76;
 
-	hour = (int)time;
-	min = (time - hour) * 60;
-	sec = (min - (double)min);
+	hour = (int)time; // = 3
+	min = (time - hour) * 60; // = 45
+	sec = (((time - hour) * 60) - min) * 60 ;
 
-	printf("%0.2lf")
+	printf("%0.2lf 시간은 %d시간 %d분 %d초입니다.", time, hour, min, sec);
+
 }
 
 int main()
 {
 	//audience();
+	trans();
 	
 	return 0;
 }
