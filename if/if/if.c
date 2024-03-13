@@ -143,6 +143,140 @@ void Q6()
 	printf("%d%c%d=%d", a, oper, b, cal);
 		
 }
+void Q7()
+{
+	int a = 1;
+	int i = 0;
+
+	for (i = 0; i < 3; i++)
+	{
+		a = a * 2;
+	}
+
+	printf("a : %d\n", a);
+}
+
+void Q8()
+{
+	int a = 0;
+	do
+	{
+		scanf("%d", &a);
+
+	} while (a < 0);
+}
+
+void Q9()
+{
+	int i;
+	for (i = 0; i < 5; i++)
+	{
+		printf("Be happy\n");
+	}
+	
+}
+
+void Q10()
+{
+	int i;
+	for (i = 0; i < 10; i++)
+	{
+		printf("$");
+	}
+}
+
+int Q11()
+{
+	int a,j;
+	while (1)
+	{
+		printf("몇단? : ");
+		scanf("%d", &a);
+		if (a > 0)
+		{
+			for (j = 1; j <= 9; j++)
+			{
+				printf("%d * %d = %d\n", a, j, a * j);
+			}
+		}
+		else
+		{
+			printf("양의 정수를 입력하시오\n");
+		}
+	}
+	return 0;
+}
+
+void Q12()
+{
+	int num, i, cnt = 0;
+
+	printf("2 이상의 정수를 입력하세요 : ");
+	scanf("%d", &num);
+	
+	for (i = 2; i < num; i++)
+	{
+		if (num % i == 0)
+		{
+			cnt++;
+		}
+	}
+
+	if (cnt == 0) {
+		printf("%d\n", num);
+	}
+		
+}
+
+void T()
+{
+	int input = 0, count1 = 0, count2 = 0;
+
+	printf("2 이상의 정수를 입력하세요 : ");
+	scanf_s("%d", &input);
+
+	for (int i = 1; i <= input; i++)
+	{
+		for (int j = 1; j < i; j++)
+		{
+			if (i % j == 0)
+				count1++;
+		}
+
+		if (count1 == 1) {
+			printf("%5d\t", i);
+			count2++;
+
+			if (count2 % 5 == 0)
+				printf("\n");
+		}
+
+		count1 = 0;
+	}
+	system("pause");
+	return 0;
+}
+
+double centi_to_meter(double Height)
+{
+	double meter;
+	meter = Height / 100;
+	return meter;
+}
+
+int submain(void)
+{
+	double res;
+
+	res = centi_to_meter(187);
+	printf("%.2lfm\n", res);
+
+	return 0;
+}
+
+
+	
+	
 
 int main()
 {
@@ -151,6 +285,14 @@ int main()
 	//Q3();
 	//Q4();
 	//Q5();
-	Q6();
+	//Q6();
+	//Q7();
+	//Q8();
+	//Q9();
+	//Q10();
+	//Q11();
+	//Q12();
+	//T();
+	submain();
 	return 0;
 }
