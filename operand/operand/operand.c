@@ -117,10 +117,34 @@ void trans()
 
 }
 
+void BMI()
+{
+	int Weight = 0;
+	double Height = 0;
+	double BMI = 0;
+
+	printf("몸무게(kg)와 키(cm) 입력 : ");
+	scanf("%d %lf", &Weight, &Height);
+	BMI = Weight / ((Height / 100) * (Height / 100));
+	if (BMI < 20.0)
+	{
+		printf("저체중 입니다.");
+	}
+	else if ((BMI >= 20.0) && (BMI < 25.0))
+	{
+		printf("표준입니다.");
+	}
+	else
+	{
+		printf("체중관리가 필요합니다.");
+	}
+}
+
 int main()
 {
 	//audience();
-	trans();
+	//trans();
+	BMI();
 	
 	return 0;
 }
