@@ -277,49 +277,60 @@
 //
 //}
 
+//int main()
+//{
+//	int A = 0;
+//	int B = 0;
+//	int C = 0;
+//	int res = 0;
+//
+//	scanf("%d %d %d", &A, &B, &C);
+//
+//	if ((A == B) && (A == C))
+//	{
+//		res = 10000 + (A * 1000);
+//	}
+//	else if (A == B)
+//	{
+//		res = 1000 + A * 100;
+//	}
+//	else if (B == C)
+//	{
+//		res = 1000 + B * 100;
+//	}
+//	else if (A == C)
+//	{
+//		res = 1000 + C * 100;
+//	}
+//	else if ((A != B) && (A != C) && (B != C))
+//	{
+//		if ((A > B) && (A > C))
+//		{
+//			res = 100 * A;
+//		}
+//		else if ((B > A) && (B > C))
+//		{
+//			res = 100 * B;
+//		}
+//		else if ((C > A) && (C > B))
+//		{
+//			res = 100 * C;
+//		}
+//	}
+//
+//	printf("%d", res);
+//
+//	return 0;
+//}
+
 int main()
 {
-	int A = 0;
-	int B = 0;
-	int C = 0;
-	int res = 0;
-	scanf("%d %d %d", &A, &B, &C);
-
-	if (A == B == C)
+	int N = 0;
+	int i;
+	scanf("%d", &N);
+	for (i = 1; i < 10; i++)
 	{
-		res = 10000 + (A * 1000);
+		printf("%d * %d = %d\n", N, i, N * i);
 	}
-	else if (A == B)
-
-
-	{
-		res = 1000 + A * 100;
-	}
-	else if (B == C)
-	{
-		res = 1000 + B * 100;
-	}
-	else if (A == C)
-	{
-		res = 1000 + C * 100;
-	}
-	else if (A != B != C)
-	{
-		if ((A > B) || (A > C))
-		{
-			res = 100 * A;
-		}
-		else if ((B > A) || (B > C))
-		{
-			res = 100 * B;
-		}
-		else if ((C > A) || (C > B))
-		{
-			res = 100 * C;
-		}
-	}
-
-	printf("%d", res);
-
-	return 0;
+	
 }
