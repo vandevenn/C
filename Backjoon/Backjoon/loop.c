@@ -40,12 +40,33 @@ void Q2439()
 		}
 		printf("\n");
 	}
+}
 
-
+void Q10952()
+{
+	int A = 0;
+	int B = 0;
+	while (1)
+	{
+		scanf("%d %d", &A, &B);
+		if ((A == 0) && (B == 0))
+		{
+			break;
+		}
+		else if ((A < 0) || (A > 9) || (B < 0) || (B > 9))
+		{
+			printf("1~9사이만 입력");
+		}
+		else
+		{
+			printf("%d\n", A + B);
+		}
+	}
 }
 int main()
 {
 	//Q2438();
-	Q2439();
+	//Q2439();
+	Q10952();
 	return 0;
 }
