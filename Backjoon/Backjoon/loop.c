@@ -22,6 +22,10 @@ void Q2438()
 
 void Q2439()
 {
+
+
+
+
 	int N = 1;
 	scanf("%d", &N);
 	if ((N < 1) || (N > 100))
