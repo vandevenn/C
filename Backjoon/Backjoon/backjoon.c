@@ -19,9 +19,15 @@
 //	printf("%d\n", A + B);
 //	printf("%d\n", A - B);
 //	printf("%d\n", A * B);
+// \
+// 
 //	printf("%d\n", A / B);
 //	printf("%d\n", A % B);
 //
+// 
+// 
+// 
+// 
 //	return 0;
 //	
 //}
@@ -323,14 +329,132 @@
 //	return 0;
 //}
 
-int main()
-{
-	int N = 0;
-	int i;
-	scanf("%d", &N);
-	for (i = 1; i < 10; i++)
-	{
-		printf("%d * %d = %d\n", N, i, N * i);
-	}
-	
-}
+//int main()
+//{
+//	int n = 0;
+//	int i;
+//	scanf("%d", &n);
+//	for (i = 1; i < 10; i++)
+//	{
+//		printf("%d * %d = %d\n", n, i, n * i);
+//	}
+//	
+//}
+
+//int main()
+//{
+//	int X = 0;
+//	int N = 0;
+//	int a = 0;
+//	int b = 0;
+//	int sum = 0;
+//	scanf("%d", &X);
+//	scanf("%d", &N);
+//	if (((N < 1) || (N > 100)))
+//	{
+//		printf("올바른 값을 입력");
+//	}
+//	for (int i = 0; i < N; i++)
+//	{
+//		scanf("%d %d", &a, &b);
+//		sum += a * b;
+//	}
+//	if (X == sum)
+//	{
+//		printf("Yes");
+//	}
+//	else
+//	{
+//		printf("No");
+//	}
+//
+//	return 0;
+//}
+
+//int main()
+//{
+//	int N = 4;
+//	int i = 0;
+//	scanf("%d", &N);
+//	if ((N % 4) != 0)
+//	{
+//		printf("4의 배수를 입력");
+//	}
+//	else if ((N < 4) || (N > 1000))
+//	{
+//		printf("4 ~ 1000 사이 값 입력");
+//	}
+//	else
+//	{
+//		for (int i = 0; i < N; i++)
+//		{
+//			i = i + 3;
+//			printf("long ");
+//		}
+//		printf("int");
+//	}
+//}
+
+//int main()
+//{
+//	int T = 0;
+//	int A = 0;
+//	int B = 0;
+//
+//	scanf("%d", &T);
+//	for (int i = 0; i < T; i++)
+//	{
+//		scanf("%d %d", &A, &B);
+//		if ((A < 1) || (A > 1000) || (B < 1) || (B > 1000))
+//		{
+//			printf("1~1000범위를 입력하시오\n");
+//		}
+//		else
+//		{
+//			printf("%d\n", A + B);
+//		}
+//	}
+//}
+
+//int main()
+//{
+//	int T = 0;
+//	int A = 0;
+//	int B = 0;
+//
+//	scanf("%d", &T);
+//	for (int i = 1; i <= T; i++)
+//	{
+//		scanf("%d %d", &A, &B);
+//		if ((A < 1) || (A > 9) || (B < 1) || (B > 9))
+//		{
+//			printf("1~9사이값 입력");
+//		}
+//		else
+//		{
+//			printf("Case #%d: %d\n", i, A + B);
+//		}
+//	}
+//
+//}
+
+//int main()
+//{
+//	int T = 0;
+//	int A = 0;
+//	int B = 0;
+//
+//	scanf("%d", &T);
+//	for (int i = 1; i <= T; i++)
+//	{
+//		scanf("%d %d", &A, &B);
+//		if ((A < 1) || (A > 9) || (B < 1) || (B > 9))
+//		{
+//			printf("1~9사이값 입력");
+//		}
+//		else
+//		{
+//			printf("Case #%d: %d + %d = %d\n", i,A,B, A + B);
+//		}
+//	}
+//}
