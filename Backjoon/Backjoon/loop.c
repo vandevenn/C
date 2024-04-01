@@ -63,10 +63,29 @@ void Q10952()
 		}
 	}
 }
+
+
+void Q10951()
+{
+	int A = 0;
+	int B = 0;
+	while (scanf("%d %d", &A, &B) != EOF)
+	{
+		if ((A < 1) || (A > 9) || (B < 1) || (B > 9))
+		{
+			printf("1~9사이만 입력");
+		}
+		else
+		{
+			printf("%d\n", A + B);
+		}
+	}
+}
 int main()
 {
 	//Q2438();
 	//Q2439();
-	Q10952();
+	//Q10952();
+	Q10951();
 	return 0;
 }
