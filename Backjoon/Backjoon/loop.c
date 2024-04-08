@@ -85,6 +85,14 @@ void Q10951()
 		}
 	}
 }
+
+void Q10807()
+{
+	int N = 0;
+	int V = 0;
+	int 
+}
+
 int main()
 {
 	//Q2438();
